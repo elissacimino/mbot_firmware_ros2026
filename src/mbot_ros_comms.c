@@ -85,7 +85,7 @@ int mbot_ros_comms_init_messages(rcl_allocator_t* allocator) {
     // Gyrodometry message initialization
     gyrodom_msg.header.frame_id.data = odom_frame_id_buf;
     gyrodom_msg.header.frame_id.capacity = FRAME_ID_CAPACITY;
-    snprintf(gyrodom_msg.header.frame_id.data, FRAME_ID_CAPACITY, "odom");
+    snprintf(gyrodom_msg.header.frame_id.data, FRAME_ID_CAPACITY, "gyrodom");
     gyrodom_msg.header.frame_id.size = strlen(gyrodom_msg.header.frame_id.data);
 
     gyrodom_msg.child_frame_id.data = odom_child_frame_id_buf;

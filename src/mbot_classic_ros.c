@@ -300,7 +300,7 @@ static bool mbot_loop(repeating_timer_t *rt) {
         tf_msg.transforms.data[0].transform.rotation      = odom_msg.pose.pose.orientation;
         tf_msg.transforms.size = 1;
 
-        // tf_msg.transforms.data[0].header.stamp.sec     = gyrodom_msg.header.stamp.sec;
+        //tf_msg.transforms.data[0].header.stamp.sec     = gyrodom_msg.header.stamp.sec;
         // tf_msg.transforms.data[0].header.stamp.nanosec = gyrodom_msg.header.stamp.nanosec;
         // tf_msg.transforms.data[0].header.frame_id      = gyrodom_msg.header.frame_id;
         // tf_msg.transforms.data[0].child_frame_id       = gyrodom_msg.child_frame_id;

@@ -22,7 +22,9 @@ void mbot_calculate_gyrodometry(float vx, float vy, float wz, float dt, float gy
 
     float dG_O = dtheta_gyro - dtheta_odom;
 
-    float dtheta_threshold = 0.125 * (PI/180) * 0.1;
+    // float dtheta_threshold = 0.125 * (PI/180) * 0.1;
+    float dtheta_threshold = 0.08 * (PI/180) / 0.1;
+
 
     float abs_GO = fabs(dG_O);
 
